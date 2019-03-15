@@ -148,8 +148,6 @@ addWidthsForest gp = map (addWidthTree gp)
 -- -----------------------------------------------------------------------------
 -- Drawing
 
-g = vcat left (map text ["┌───────┐","│ o o . │","│ o x x │","│ . . . │","└───────┘"])
-
 treeBox :: Width -> WidthTree -> Box
 treeBox gp (Node lbl ts)
   = case ts of
